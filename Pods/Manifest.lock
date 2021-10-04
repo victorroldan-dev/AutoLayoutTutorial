@@ -1,0 +1,20 @@
+PODS:
+  - PureLayout (3.1.9)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - PureLayout
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - PureLayout
+    - SnapKit
+
+SPEC CHECKSUMS:
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 30cce2db265433a43b7da46826e47270790fe657
+
+COCOAPODS: 1.11.0

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLx-WZ-p97">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamLightRegular.otf">
+            <string>Gotham-Light</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -74,8 +82,147 @@
             </objects>
             <point key="canvasLocation" x="1020" y="110"/>
         </scene>
+        <!--Example View Controller-->
+        <scene sceneID="QxN-VS-eWP">
+            <objects>
+                <viewController id="ymp-jJ-M7H" customClass="ExampleViewController" customModule="AutoLayoutTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGm-aY-Hbf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLogin" translatesAutoresizingMaskIntoConstraints="NO" id="lWe-Yt-jmC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYJ-jf-Rcg">
+                                <rect key="frame" x="22" y="700" width="370" height="55"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.34901960780000002" alpha="0.1912135948" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Ya tengo una cuenta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luf-Br-wen">
+                                <rect key="frame" x="22" y="782" width="370" height="55"/>
+                                <color key="backgroundColor" red="0.90764147039999998" green="0.23559010029999999" blue="0.42353165149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="vJL-ad-S6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Es mi primera vez aquí!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGN-S1-hep">
+                                <rect key="frame" x="22" y="575.5" width="370" height="74.5"/>
+                                <string key="text">Fácil, Rápido
+y Confiable.</string>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoIBarkDiapo" translatesAutoresizingMaskIntoConstraints="NO" id="Xy0-as-G0c">
+                                <rect key="frame" x="22" y="488.5" width="211" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="KfN-EN-DFM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rHw-m1-wPY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qGN-S1-hep" firstAttribute="centerX" secondItem="WYJ-jf-Rcg" secondAttribute="centerX" id="02f-GV-ssT"/>
+                            <constraint firstItem="lWe-Yt-jmC" firstAttribute="top" secondItem="dGm-aY-Hbf" secondAttribute="top" id="0ly-9t-xAS"/>
+                            <constraint firstItem="qGN-S1-hep" firstAttribute="top" secondItem="Xy0-as-G0c" secondAttribute="bottom" constant="20" id="3Kb-G3-4gr"/>
+                            <constraint firstItem="rHw-m1-wPY" firstAttribute="trailing" secondItem="lWe-Yt-jmC" secondAttribute="trailing" id="3bf-VP-Hho"/>
+                            <constraint firstItem="luf-Br-wen" firstAttribute="top" secondItem="WYJ-jf-Rcg" secondAttribute="bottom" constant="27" id="UYj-Da-FMC"/>
+                            <constraint firstItem="lWe-Yt-jmC" firstAttribute="leading" secondItem="rHw-m1-wPY" secondAttribute="leading" id="VTl-NG-kvd"/>
+                            <constraint firstItem="luf-Br-wen" firstAttribute="leading" secondItem="rHw-m1-wPY" secondAttribute="leading" constant="22" id="bjr-7B-XmD"/>
+                            <constraint firstItem="WYJ-jf-Rcg" firstAttribute="width" secondItem="luf-Br-wen" secondAttribute="width" id="cbm-Er-b50"/>
+                            <constraint firstItem="Xy0-as-G0c" firstAttribute="leading" secondItem="qGN-S1-hep" secondAttribute="leading" id="gRA-8i-6Qy"/>
+                            <constraint firstItem="rHw-m1-wPY" firstAttribute="trailing" secondItem="luf-Br-wen" secondAttribute="trailing" constant="22" id="ieA-66-2jo"/>
+                            <constraint firstItem="qGN-S1-hep" firstAttribute="width" secondItem="WYJ-jf-Rcg" secondAttribute="width" id="j7b-Rn-0HK"/>
+                            <constraint firstItem="WYJ-jf-Rcg" firstAttribute="centerX" secondItem="luf-Br-wen" secondAttribute="centerX" id="kMv-eC-neC"/>
+                            <constraint firstAttribute="bottom" secondItem="luf-Br-wen" secondAttribute="bottom" constant="59" id="qCY-vs-UqK"/>
+                            <constraint firstItem="WYJ-jf-Rcg" firstAttribute="top" secondItem="qGN-S1-hep" secondAttribute="bottom" constant="50" id="qJi-Qw-3Oj"/>
+                            <constraint firstItem="WYJ-jf-Rcg" firstAttribute="height" secondItem="luf-Br-wen" secondAttribute="height" id="qoz-lZ-A3k"/>
+                            <constraint firstAttribute="bottom" secondItem="lWe-Yt-jmC" secondAttribute="bottom" id="xNu-HG-nfn"/>
+                            <constraint firstItem="Xy0-as-G0c" firstAttribute="width" secondItem="dGm-aY-Hbf" secondAttribute="width" multiplier="0.51" id="zMy-ar-GLj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstTimeButton" destination="luf-Br-wen" id="m7U-hp-255"/>
+                        <outlet property="iHaveAccoutButton" destination="WYJ-jf-Rcg" id="QfU-YN-eCz"/>
+                        <outlet property="logoImage" destination="Xy0-as-G0c" id="ewJ-1X-ea4"/>
+                        <outlet property="subtitleLabel" destination="qGN-S1-hep" id="T6l-rD-20y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLH-3o-BMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="110"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="T8Y-Ot-1cZ">
+            <objects>
+                <viewController id="kLx-WZ-p97" customClass="ExampleViewController" customModule="AutoLayoutTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sws-DX-2JI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundLogin" translatesAutoresizingMaskIntoConstraints="NO" id="m9q-mq-KOT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJT-vE-usi">
+                                <rect key="frame" x="20" y="255" width="370" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.34901960780000002" alpha="0.1912135948" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Ya tengo una cuenta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fop-hm-yK8">
+                                <rect key="frame" x="20" y="337" width="370" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90764147039999998" green="0.23559010029999999" blue="0.42353165149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Es mi primera vez aquí!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdc-ri-b1f">
+                                <rect key="frame" x="20" y="131" width="370" height="74.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Fácil, Rápido
+y Confiable.</string>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoIBarkDiapo" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-ZY-I8s">
+                                <rect key="frame" x="20" y="44" width="211" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZWJ-ev-YHh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="m9q-mq-KOT" id="APR-fT-gJ3"/>
+                        <outlet property="firstTimeButton" destination="Fop-hm-yK8" id="A9b-V0-rPb"/>
+                        <outlet property="iHaveAccoutButton" destination="xJT-vE-usi" id="Nbg-4O-NBO"/>
+                        <outlet property="logoImage" destination="8fD-ZY-I8s" id="2zO-oe-W74"/>
+                        <outlet property="subtitleLabel" destination="Jdc-ri-b1f" id="zfL-ax-MDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8g-ut-0rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3106" y="110"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="backgroundLogin" width="375" height="812"/>
+        <image name="logoIBarkDiapo" width="188" height="67"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
